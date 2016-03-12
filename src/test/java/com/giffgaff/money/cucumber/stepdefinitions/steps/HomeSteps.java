@@ -1,4 +1,4 @@
-package com.giffgaff.money.cucumber.steps;
+package com.giffgaff.money.cucumber.stepdefinitions.steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;

@@ -1,4 +1,4 @@
-package com.giffgaff.money.cucumber.steps;
+package com.giffgaff.money.cucumber.stepdefinitions.steps;
 
 import net.serenitybdd.core.Serenity;
 import net.thucydides.core.annotations.Step;

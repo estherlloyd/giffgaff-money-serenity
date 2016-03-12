@@ -1,9 +1,9 @@
-package com.giffgaff.money.cucumber.steps;
+package com.giffgaff.money.cucumber.stepdefinitions.steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 
-//import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import com.giffgaff.money.cucumber.pages.Ratesetter;
 
@@ -14,9 +14,6 @@ public class RatesetterSteps extends ScenarioSteps {
 	
 	@Step
 	public void loadQuotePage() {
-		//TODO:
-		//Insert assertion to verify the page loads
-		//assertThat("Some text on the site is displayed",ratesetter.)
+		assertThat(ratesetter.quoteHeaderText()).contains("Get a personalised quote in just 2 minutes");
 	}
-   
 }

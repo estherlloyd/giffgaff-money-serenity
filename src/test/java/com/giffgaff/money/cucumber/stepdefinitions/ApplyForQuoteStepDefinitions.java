@@ -5,19 +5,27 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
-import com.giffgaff.money.cucumber.steps.HomeSteps;
-import com.giffgaff.money.cucumber.steps.TopNavigationSteps;
-import com.giffgaff.money.cucumber.steps.MoneyLoansSteps;
-import com.giffgaff.money.cucumber.steps.RatesetterSteps;
-import com.giffgaff.money.cucumber.steps.MemberSteps;
+import com.giffgaff.money.cucumber.stepdefinitions.steps.HomeSteps;
+import com.giffgaff.money.cucumber.stepdefinitions.steps.TopNavigationSteps;
+import com.giffgaff.money.cucumber.stepdefinitions.steps.MoneyLoansSteps;
+import com.giffgaff.money.cucumber.stepdefinitions.steps.RatesetterSteps;
+import com.giffgaff.money.cucumber.stepdefinitions.steps.MemberSteps;
 
 public class ApplyForQuoteStepDefinitions {
 
     @Steps
-    MemberSteps member;
     HomeSteps home;
+    
+    @Steps
+    MemberSteps member;
+    
+    @Steps
     TopNavigationSteps topNav;
+    
+    @Steps
     MoneyLoansSteps moneyLoans;
+    
+    @Steps
     RatesetterSteps quoteForm;
    
     
